@@ -1,10 +1,10 @@
 import Order from "../model/orderModel.js";
 import User from "../model/userModel.js";
-import Razorpay from 'razorpay'
+import razorpay from 'razorpay'
 import dotenv from 'dotenv'
 dotenv.config()
 const currency = 'inr'
-const razorpayInstance = new Razorpay({
+const razorpayInstance = new razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET
 })
